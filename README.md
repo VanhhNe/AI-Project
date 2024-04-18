@@ -7,9 +7,6 @@ echo "# AI Project" >> README.md
 git init
 git remote add origin https://github.com/VanhhNe/AI-Project.git
 git add README.md
-git commit -m "first commit"
-git branch -M <your_branch_name>
-
 ```
 ### Manage your own branch in GitHub
 Each member will create their own branch individually using the following command:
