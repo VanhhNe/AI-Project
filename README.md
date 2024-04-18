@@ -3,7 +3,6 @@
 ### Initializing a local repository
 Firstly, you need to create a local repository:
 ```bash
-echo "# AI Project" >> README.md
 git init
 git remote add origin https://github.com/VanhhNe/AI-Project.git
 ```
