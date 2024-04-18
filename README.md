@@ -34,7 +34,7 @@ In your own branch, you can make any changes you want. In the final version of t
 ### Switch to the Other Branch
 First, switch to the branch from which you want to get source code.
 ```bash
-git checkout <other_branch_name>
+git branch -M <other_branch_name>
 ```
 Pull the latest changes
 ```bash
