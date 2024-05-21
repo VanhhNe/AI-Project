@@ -230,7 +230,7 @@ public class PanelSolver extends JPanel {
 					counter = 0;
 					timer.start();
 					restGame();
-					SudokuSolver.newName();
+					SudokuSolver.newGame();
 					label.setVisible(true);
 				}
 			}
@@ -304,7 +304,7 @@ public class PanelSolver extends JPanel {
 					String enteredPassword = new String(pass.getPassword());
 					System.out.println(enteredPassword);
 
-					if (enteredPassword.equals("dsa")) {
+					if (enteredPassword.equals("pass")) {
 						timer.stop();
 						counter = 0;
 						label.setText(TimeFormat(counter));

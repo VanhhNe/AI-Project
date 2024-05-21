@@ -90,6 +90,5 @@ nb-configuration.xml
 *.log
 
 ##############
-## Project
-src/ResearchComputation/
+src/Test_Cases
 src/Draft

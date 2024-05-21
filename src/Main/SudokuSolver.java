@@ -36,8 +36,8 @@ public class SudokuSolver {
 		int frameWidth = 800;
 		int frameHeight = 800;
 
-		int offsetX = -100;
-		int offsetY = -200;
+		int offsetX = -10;
+		int offsetY = -20;
 
 		int screenWidth = Toolkit.getDefaultToolkit().getScreenSize().width;
 		int screenHeight = Toolkit.getDefaultToolkit().getScreenSize().height;
@@ -142,7 +142,7 @@ public class SudokuSolver {
 
 	}
 
-	public static void newName() {
+	public static void newGame() {
 		generateBoard(level);
 		if (solveBoard(grid)) {
 			System.out.println("OK!!!" + level);
@@ -151,46 +151,6 @@ public class SudokuSolver {
 		panel.setArray(grid, temp);
 		panel.setTextLabel();
 	}
-
-//	public static void newName() {
-//		int k = 0;
-//		ArrayList<Integer> randomNumber = getRandomNum();
-//
-//		for (int i = 0; i < GRID_SIZE; i++) {
-//			for (int j = 0; j < GRID_SIZE; j++) {
-//				grid[i][j] = 0;
-//				if ((j + 2) % 2 == 0 && ((i + 2) % 2) == 0) {
-//					grid[i][j] = randomNumber.get(k);
-//					k++;
-//					if (k == 9) {
-//						k = 0;
-//					}
-//				}
-//			}
-//		}
-//
-//		if (solveBoard(grid)) {
-//			System.out.println("OK!!!" + level);
-//		}
-//
-//		int rann = ran.nextInt(level);
-//		int c = 0;
-//		for (int i = 0; i < 9; i++) {
-//			for (int j = 0; j < 9; j++) {
-//				temp[i][j] = 0;
-//				if (c < rann) {
-//					c++;
-//					continue;
-//				} else {
-//					rann = ran.nextInt(level);
-//					c = 0;
-//					temp[i][j] = grid[i][j];
-//				}
-//			}
-//		}
-//		panel.setArray(grid, temp);
-//		panel.setTextLabel();
-//	}
 
 	private static ArrayList<Integer> getRandomNum() {
 		ArrayList<Integer> numbers = new ArrayList<Integer>();
